@@ -60,8 +60,7 @@ class Neighborhood {
               return delivery.mealId === this.id;}
             )};
           customers () {
-            return this.deliveries().map(delivery => {
-              return customer.mealId === this.id;}
+            return this.deliveries().map(delivery => { delivery.customer();}
             )};
 
       }
