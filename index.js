@@ -72,7 +72,7 @@ class Neighborhood {
             }
 
           static byPrice() {
-            debugger
+            
             return store.meals.sort(function(a,b) {return b.price - a.price});
           }
 
