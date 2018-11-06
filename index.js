@@ -63,10 +63,10 @@ class Neighborhood {
      const allCustomers = this.deliveries().map(delivery => delivery.customer());
      return [...new Set(allCustomers)];
    }
-   
-static byPrice() {
- return store.meals.sort((a, b) => a.price < b.price);
-}
+
+      static byPrice() {
+        return store.meals.sort((a, b) => a.price < b.price);
+      }
 
       }
       let deliveryId = 0;
