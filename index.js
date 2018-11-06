@@ -75,7 +75,7 @@ class Neighborhood {
             return store.meals.sort(function(a,b) {return a.price - b.price});
           }
 
-          
+
 
 // [1, 2, 3, 4, 5]
 
