@@ -60,11 +60,9 @@ class Neighborhood {
               return delivery.mealId === this.id;}
             )};
           customers () {
-            return store.customers.filter(delivery => {
-              return delivery.mealId === this.id;}
+            return this.deliveries().map(delivery => {
+              return customer.mealId === this.id;}
             )};
-
-
 
       }
       let deliveryId = 0;
