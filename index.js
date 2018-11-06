@@ -63,10 +63,10 @@ class Neighborhood {
      const allCustomers = this.deliveries().map(delivery => delivery.customer());
      return [...new Set(allCustomers)];
    }
-   totalSpent() {
-     return this.meals().reduce((total, meal) => (total += meal.price), 0);
-   }
-
+   
+static byPrice() {
+ return store.meals.sort((a, b) => a.price < b.price);
+}
 
       }
       let deliveryId = 0;
