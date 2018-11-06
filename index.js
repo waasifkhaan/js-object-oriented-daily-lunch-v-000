@@ -20,8 +20,8 @@ class Neighborhood {
 
       meals() {
             debugger
-        const meals = this.customers().map(customer => customer.meals());
-      
+        const meals = this.deliveries().map(delivery => delivery.meal());
+
         return [...new Set(meals)]
 
       }
@@ -41,7 +41,7 @@ class Neighborhood {
         return store.deliveries.filter(delivery => {
           return delivery.customerId === this.id;}
         )};
-        meals() {
+      meals() {
          return this.deliveries().map(delivery => delivery.meal());
        }
 
