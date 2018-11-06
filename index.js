@@ -61,7 +61,7 @@ class Neighborhood {
             )};
           customers () {
             return this.deliveries().map(delivery => { delivery.customer();}
-            )};
+          )}.unique();
 
       }
       let deliveryId = 0;
