@@ -39,7 +39,7 @@ class Neighborhood {
           return delivery.customerId === this.id;}
         )};
       meals () {
-        return this.deliveries.filter(deliver => {
+        return this.deliveries().filter(deliver => {
           delivery.meal();}
         )};
 
