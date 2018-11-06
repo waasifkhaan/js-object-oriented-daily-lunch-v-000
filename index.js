@@ -60,6 +60,11 @@ class Neighborhood {
 
               store.deliveries.push(this);
             }
+          meal() {
+              return store.meals.find(meal => {
+                return meal.id === this.mealId;
+        });
+      }
       
         customer() {
           return store.customers.find(customer => {
