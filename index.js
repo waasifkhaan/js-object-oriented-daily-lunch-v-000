@@ -55,6 +55,11 @@ class Neighborhood {
             store.meals.push(this);
           }
 
+          deliveries () {
+            return store.deliveries.filter(delivery => {
+              return delivery.customerId === this.id;}
+            )};
+
       }
       let deliveryId = 0;
 
