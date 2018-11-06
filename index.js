@@ -52,7 +52,7 @@ class Neighborhood {
       let deliveryId = 0;
 
       class Delivery {
-          constructor(meal,customer,neighborhood) {
+          constructor(meal,neighborhood,customer) {
               this.id = ++deliveryId;
               this.mealId = meal;
               this.neighborhoodId = neighborhood;
