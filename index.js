@@ -59,7 +59,11 @@ class Neighborhood {
             return store.deliveries.filter(delivery => {
               return delivery.mealId === this.id;}
             )};
-        
+            customers() {
+     const allCustomers = this.deliveries().map(delivery => delivery.customer());
+     return [...new Set(allCustomers)];
+   }
+
 
       }
       let deliveryId = 0;
