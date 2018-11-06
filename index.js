@@ -19,8 +19,9 @@ class Neighborhood {
           return customer.neighborhoodId=this.id;})}
 
       meals() {
+            debugger
         const meals = this.customers().map(customer => customer.meals());
-        debugger
+      
         return [...new Set(meals)]
 
       }
