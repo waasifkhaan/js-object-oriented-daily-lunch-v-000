@@ -17,10 +17,10 @@ class Neighborhood {
       customers () {
         return store.customers.filter(customer =>{
           return customer.neighborhoodId=this.id;})}
-          
+
       meals() {
-        return const meals = this.customers().map(customer => customer.meals());
-        
+        const meals = this.customers().map(customer => customer.meals());
+        return meals 
 
       }
 
