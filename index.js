@@ -16,12 +16,11 @@ class Neighborhood {
       )};
       customers () {
         return store.customers.filter(customer =>{
-          return customer.neighborhoodId=this.id;
-      }
-    )
-
-}
-
+          return customer.neighborhoodId=this.id;})}
+      meals() {
+        const meals = this.customers().map(customer => customer.meals());
+        
+      }    
 
   }
   let customerId = 0;
