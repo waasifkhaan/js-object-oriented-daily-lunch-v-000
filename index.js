@@ -71,5 +71,10 @@ class Neighborhood {
             return customer.id === this.customerId;
     });
   }
+  neighborhood() {
+    return store.neighborhoods.find(neighborhood => {
+      return neighborhood.id === this.neighborhoodId;
+});
+}
 
       }
